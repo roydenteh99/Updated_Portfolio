@@ -29,8 +29,8 @@ export function Button({ text, link, targetId }) {
   if (link) {
     return (
       <a href={link}>
-        <button className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg">
-          <p className="roboto dark:text-white text-black text-2xl">{text}</p>
+        <button >
+          <p >{text}</p>
         </button>
       </a>
     );
@@ -39,9 +39,8 @@ export function Button({ text, link, targetId }) {
   return (
     <button
       onClick={handleClick}
-      className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg"
     >
-      <p className="roboto dark:text-white text-black text-2xl">{text}</p>
+      <p >{text}</p>
     </button>
   );
 }
