@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Dp from './assets/DisplayPic.svg'
 import DisplayPic from './UIComponents/DisplayPic/DisplayPic'
-import TypeButton from './TypeButton/TypeButton'
 import { ButtonGroup } from './UIComponents/ButtonGroup/ButtonGroup'
 import './App.css'
 
@@ -12,34 +11,41 @@ function App() {
     <div className='
 	First_Layer 
 	border-1 box-border
-	flex flex-row-reverse 
-	justify-start items-start 
+	md:text-4xl
+	flex flex-col flex_wrap
+	md:flex-row-reverse 
+	justify-start items-end 
+	items-end
+	md:items-start
 	min-h-screen w-screen 
 	'>
 	<div className="
-	Second_Layer
+	Second_Layer_DP
 	border-2 border-blue-500 
-	w-full max-w-sm sm:max-w-md lg:max-w-lg">
+	basis-1/2
+	w-8/10  ">
 		<DisplayPic src = {Dp} alt={"picture_of_me"}/>
     </div>
 	<div className='
-	Second_Layer
-	border-2 border-pink-500 
+	Second_Layer_Buttongroup
+	basis-1/2
+	border-2 border-pink-500
+	w-full max-w-screen 
 	'>
 		<ButtonGroup 
 		buttons={[
-			{name:"Hi"
+			{name:"About"},
+			{name: "Contact"},
+			{name : "Experience"}
+
+			]} />
 
 
-		}]}></ButtonGroup>
 
 
-
-	{/* <div className="border-2 border-red-500">
-		<TypeButton text={"Hello"}/>
-
-
-	</div> */}
+	</div>
+	<div>
+		<h1>About</h1>
 	</div>
 	</div>
 

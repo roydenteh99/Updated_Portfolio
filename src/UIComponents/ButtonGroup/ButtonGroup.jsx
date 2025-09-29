@@ -1,7 +1,9 @@
 
 export  function ButtonGroup({buttons}) {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-evenly
+	flex-row 
+	md:flex-col">
       {buttons.map((btn) => (
         <Button
           key={btn.name}
