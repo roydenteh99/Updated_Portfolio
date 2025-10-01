@@ -1,9 +1,11 @@
 
-export  function ButtonGroup({buttons}) {
+export function MyButtonGroup({buttons,direction ="row"}) {
   return (
-    <div className="flex gap-4 justify-evenly
-	flex-row 
-	md:flex-col">
+    <div
+      className={`flex gap-4 justify-evenly flex-wrap flex-col ${
+        direction === "row" ? "md:flex-row" : "md:flex-col"
+      }`}
+    >
       {buttons.map((btn) => (
         <Button
           key={btn.name}
