@@ -32,7 +32,7 @@ function App() {
 	
 	<div className='
 	Second_Layer_Buttongroup
-	
+	flex flex-col space-y-2
 	self-end
 	w-full 
 	'>	
@@ -44,6 +44,8 @@ function App() {
 				"Other"
 			]}
 			selectlabel='Field'
+			value = {field}
+			onValueChange={setfield}
 			/>
 		
 
@@ -62,8 +64,8 @@ function App() {
 	</div>
 
 	</div>
-	<div>
-		<h1>About</h1>
+	<div id = "about" className="border border-blue-500 text-left">
+		<h1>About {field}</h1 >
 	</div>
 	</div>
 

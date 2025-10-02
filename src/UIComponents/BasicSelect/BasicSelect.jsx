@@ -1,34 +1,18 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-
-export default function BasicSelect({items , selectlabel = "label"}) {
-  const [age, setAge] = React.useState('');
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
-
+export default function BasicSelect({ items, selectlabel = "Label", value, onValueChange }) {
   return (
-    <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">{selectlabel}</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={age}
-          label= {selectlabel}
-          onChange={handleChange}
-        >
-		{items.map((item, index) => (
-			<MenuItem key = {index} value = {item}>{item}</MenuItem>
-		))
-		} 
-        </Select>
-      </FormControl>
-    </Box>
+    <div className="flex flex-col gap-0 w-full text-center">
+      <label className="text-gray-700 font-medium text-xs m-0 p-0 border border-purple-300">{selectlabel}</label>
+      <select
+        value={value}
+        onChange={(e) => onValueChange(e.target.value)}
+        className="p-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        {items.map((item, index) => (
+          <option key={index} value={item} className="text-center">
+            {item}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 }
