@@ -1,0 +1,66 @@
+  [	
+
+	{
+	"providedDate" : "Present - March 2025",
+	"cardTitle": "GradeSolution",
+	"cardSubtitle": "Science Tutor",
+	"cardDetailedText": [
+	"1) Conduct engaging online lessons to help primary school students understand key science concepts through interactive teaching methods (Online Learning, Primary Science).",
+	"2) Adapt teaching strategies to handle students with varying learning paces and attention spans, maintaining engagement and motivation (Classroom Management, Student Engagement).",
+	"3) Communicate effectively and patiently with demanding parents and supervisors to ensure student progress and satisfaction (Parent Communication, Conflict Management).",
+	"4) Manage challenges in the existing syllabus and errata by clarifying misconceptions, correcting outdated content, and developing clearer explanations (Curriculum Adaptation, Content Revision)."
+	],
+	"fields": ["All", "Education"]
+	}
+	,
+	{
+	"providedDate" : "Present - Feb 2025",
+	"cardTitle": "65Drones",
+	"cardSubtitle": "Applied Engineering Instructor",
+	"cardDetailedText": [
+	"1) Guide students in practical applications of engineering through hands-on projects involving drone programming, vision systems, and autonomous control.",
+	"2) Develop and teach training modules on drone API integration, multi-drone coordination, and swarm flight demonstrations (Drone API, Drone Swarm).",
+	"3) Implement computer vision systems for object detection and recognition tasks using (OpenCV, TensorFlow).",
+	"4) Provide drone missions solution by using (Machine Learning), processing sensor data, and applying control algorithms to improve performance (Sensor Fusion, Control Algorithms)"
+	],
+	"fields": ["All", "Engineering", "Education"]
+	}
+	,
+  	{ 
+    "providedDate": " Dec 2024 -Sep 2024 ",
+    "cardTitle": "Omni-Health ",
+    "cardSubtitle": "Robotic Engineer",
+	"cardDetailedText":[
+		"1) Build and deploy web applications and robots for the healthcare sector using (Node.js, Postman, and Visual Studio Code).",
+      	"2) Provide technical support for local and overseas operations, including (SR, Keenon, Yu Jin, and Temi.)",
+      	"3) Perform mapping and parameter setups for (AGVs/AMRs), utilizing (Linux commands) for configuration.",
+      	"4) Facilitate communication with customers and the company through reports (MS Office, Canva) and inquiries."
+     	],
+    "fields": ["All", "Engineering"]
+  	},
+  	{ 
+    "providedDate": " Aug 2024 - June 2018 ",
+    "cardTitle": "Various Companies",
+    "cardSubtitle": "STEM Instructor",
+	"cardDetailedText":[
+		" Companies: The Brainery Code, Coder Passion, Stem Institute, Stem Genius, Code Gekko.",
+      	" Lesson: Python, LEGO( WeDo, Lego Spike Prime Inventor & EV3 ), MicroBit Scratch, MineCraft Edu, MakeCode Arcade ",
+      	" Manage class of 15-30 students / 3-10 students, taught kids, teenagers and adult collegues. Communicate with both parents and kids"
+     	],
+    "fields": ["All", "Engineering" , "Education"]
+  	}
+	,
+
+	{
+	"providedDate": "Mar 2020 - Jun 2021",
+	"cardTitle": "SAF",
+	"cardSubtitle": "Automotive Technician",
+	"cardDetailedText": [
+	"1) In charge of going through maintenance for M3G, 5-Tonne Truck, Boat Engine.",
+	"2) Repair or replace worn parts, such as brake pads, wheel bearings, and sensors.",
+	"3) Test parts and systems to ensure that they work properly."
+	],
+  	"fields": ["All", "Engineering"]
+	}
+	
+]

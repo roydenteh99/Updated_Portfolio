@@ -5,7 +5,7 @@ export default function BasicSelect({ items, selectlabel = "Label", value, onVal
       <select
         value={value}
         onChange={(e) => onValueChange(e.target.value)}
-        className="p-2 border border-gray-300 rounded-md bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="p-1 border border-gray-300 rounded-md bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         {items.map((item, index) => (
           <option key={index} value={item} className="text-center">

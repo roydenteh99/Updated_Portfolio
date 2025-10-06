@@ -1,23 +1,64 @@
 import { useEffect, useState } from 'react';
-import { Chrono } from 'react-chrono';
-import MarkdownComponent from '../MarkdownComponent/MarkdownComponent';
 
-export default function Timeline({ timelineData ,field }) {
+import { Chrono } from 'react-chrono';
+import { data } from 'react-router-dom';
+
+
+
+export default function Timeline({timelineData, field}) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
     // Convert each item to include MarkdownComponent
-    const newItems = timelineData.map((item) => ({
+    const newItems = timelineData
+	.filter((item) => item.fields.includes(field))
+	.map((item) => ({
       ...item,
-      cardDetailedText: <MarkdownComponent filepath={item.filePath}/>,
-	  visibility : item.fields.include(field)
+	  title : item.providedDate ? titleAndDate(item["cardTitle"], item["providedDate"]) : item["title"]
     }));
     setItems(newItems);
+	console.log("field change");
+	console.log({field});
   }, [timelineData ,field]);
 
+
+
+return (
+    <div
+      className="
+        w-full 
+        h-[500px]
+        overflow-x-auto 
+        scroll-smooth 
+        [scrollbar-width:none] 
+        [-ms-overflow-style:none]
+        no-scrollbar
+      "
+      style={{ WebkitOverflowScrolling: 'touch' }}
+    >
+      {items.length > 0 && (
+        <div className="min-w-[1200px]">
+          <Chrono
+            items={items}
+            mode="HORIZONTAL"
+			cardWidth ={250}
+			itemWidth = {280}
+            showAllCardsHorizontal={true}
+            disableToolbar={true}
+            useReadMore={true}
+            scrollable={true}
+          />
+        </div>
+      )}
+    </div>
+  );
+}
+
+function titleAndDate(title, date) {
   return (
-    <div style={{ width: "100%", height: "400px" }}>
-      {items.length > 0 && <Chrono items={items} />}
+    <div className="flex flex-col items-start">
+      <h3 className="font-semibold text-base">{title}</h3>
+      <p className="text-sm ">{date}</p>
     </div>
   );
 }

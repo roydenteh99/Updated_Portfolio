@@ -5,8 +5,10 @@ import DisplayPic from './UIComponents/DisplayPic/DisplayPic'
 import { MyButtonGroup } from './UIComponents/MyButtonGroup/MyButtonGroup'
 import BasicSelect from './UIComponents/BasicSelect/BasicSelect'
 import MarkdownComponent from './UIComponents/MarkdownComponent/MarkdownComponent'
+import Timeline from './UIComponents/Timeline/Timeline'
 import { HashRouter, useLocation, useNavigate } from "react-router-dom";
 import aboutPath from "./data/aboutPath.json"
+import experiencePath from "./data/experiencePath.json"
 import './App.css'
 
 const fields = ["All","Engineering","Education","Other"]
@@ -46,7 +48,7 @@ function MainContent() {
 		flex-col md:flex-row-reverse 
 		justify-start 
 		items-end md:items-start
-		w-screen 
+		w-full
 		m-0
 		'>
 			<div className="
@@ -58,8 +60,9 @@ function MainContent() {
 	
 			<div className='
 			Second_Layer_Buttongroup
-			flex flex-col space-y-2
-			self-end
+			border-2 border-blue-500 
+			flex flex-col space-y-2 
+			self-center
 			w-full 
 			'>	
 				<BasicSelect 
@@ -72,20 +75,20 @@ function MainContent() {
 
 				<MyButtonGroup 
 				buttons={[
-					{name:"About"},
+					{name:"About", targetId:"About"},
+					{name : "Experience" , targetId:"Experience"},
 					{name: "Contact"},
-					{name : "Experience"},
 					{name : "Projects"}
-
 					]}
 					direction='col'
 				/>
+				
 		
 		 
 			</div>
 
 		</div>
-		<div id = "about" className="
+		<div id = "About" className="
 		First_layer_about
 		border border-blue-500 
 		w-full
@@ -94,8 +97,11 @@ function MainContent() {
 			<MarkdownComponent filepath={aboutPath[field]} />
 
 		</div>
-		<div className='text-left'>
-			<h1>Experience</h1>
+		<div id ="Experience" className='text-left p-5 w-full overflow-x-auto scroll-smooth' >
+			<h1 className='mb-5'>Experience</h1>
+			<Timeline timelineData={experiencePath} field={field}></Timeline>
+
+					
 		</div>
 	</div>
 
