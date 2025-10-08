@@ -1,4 +1,2 @@
-# About me
-
-This section highlights my professional experience and skills in engineering.
-
+A hands-on problem solver with a strong interest in robotics, automation, and drones, I work with both hardware and software to create real-world solutions. My engineering experience includes developing autonomous systems, configuring AMRs/AGVs, and implementing computer vision and machine learning for intelligent drone applications.
+I enjoy building and experimenting — from fine-tuning flight controllers to writing Node.js APIs for robot communication. Each project sharpens my ability to bridge mechanical systems with digital system for more effective operations

@@ -37,7 +37,7 @@ return (
       style={{ WebkitOverflowScrolling: 'touch' }}
     >
       {items.length > 0 && (
-        <div className="min-w-[1200px]">
+        <div className="min-w-[3000px]">
           <Chrono
             items={items}
             mode="HORIZONTAL"
@@ -46,7 +46,6 @@ return (
             showAllCardsHorizontal={true}
             disableToolbar={true}
             useReadMore={true}
-            scrollable={true}
           />
         </div>
       )}

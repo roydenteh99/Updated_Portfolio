@@ -2,7 +2,7 @@
 
 	{
 	"providedDate" : "Present - March 2025",
-	"cardTitle": "GradeSolution",
+	"cardTitle": "Grade Solution",
 	"cardSubtitle": "Science Tutor",
 	"cardDetailedText": [
 	"1) Conduct engaging online lessons to help primary school students understand key science concepts through interactive teaching methods (Online Learning, Primary Science).",
@@ -26,6 +26,21 @@
 	"fields": ["All", "Engineering", "Education"]
 	}
 	,
+	{
+	"providedDate" : "July 2025 - July 2025",
+	"cardTitle" : "GSA",
+	"cardSubtitle": "Trainer (Google Workspace for Adults)",
+	"cardDetailedText": [
+	"1) Conducted hands-on training sessions for adult learners on (Google Workspace tools, including Docs, Sheets, and Drive).",
+	"2) Designed beginner-friendly lessons focusing on practical, workplace-oriented applications.",
+	"3) Provided one-on-one guidance to help participants gain confidence in online collaboration",
+	"4) Assessed participants’ progress and adapted teaching pace to accommodate varied digital literacy levels."
+	],
+	"fields": ["All", "Education"]
+
+  	}
+	,
+
   	{ 
     "providedDate": " Dec 2024 -Sep 2024 ",
     "cardTitle": "Omni-Health ",
@@ -37,7 +52,34 @@
       	"4) Facilitate communication with customers and the company through reports (MS Office, Canva) and inquiries."
      	],
     "fields": ["All", "Engineering"]
-  	},
+  	}
+	,
+	{
+    "providedDate": "June 2024 - June 2022",
+    "cardTitle": "Freelance Performer",
+    "cardSubtitle": "Wushu Performer",
+    "cardDetailedText": [
+      "1) Perform choreographed Wushu routines at public and private events, demonstrating precision, strength, and control (Martial Arts Performance, Stage Discipline).",
+      "2) Collaborate with other performers to execute synchronized routines safely and dynamically (Team Coordination, Show Execution).",
+      "3) Participate in cultural showcases to promote traditional martial arts and engage audiences through live demonstrations (Cultural Promotion, Audience Engagement)."
+    ],
+    "fields": ["All", "Other"]
+   	}
+	,
+	  	
+	{
+    "providedDate": "Jan 2024 - Jan 2024",
+    "cardTitle": "Event Performer",
+    "cardSubtitle": "Live Actor (Pirate Role)",
+    "cardDetailedText": [
+      "1) Portrayed a pirate character during live shows and themed events, engaging audiences through improvisation and interactive storytelling (Character Acting, Improvisation).",
+      "2) Worked with directors and crew to deliver entertaining, safe, and family-friendly performances (Team Collaboration, Event Safety).",
+      "3) Enhanced audience participation by blending humor, performance, and authentic character energy (Audience Engagement, Public Speaking)."
+    ],
+    "fields": ["All", "Other"]
+  	}
+
+  	,
   	{ 
     "providedDate": " Aug 2024 - June 2018 ",
     "cardTitle": "Various Companies",
@@ -62,5 +104,45 @@
 	],
   	"fields": ["All", "Engineering"]
 	}
+	,
+	{
+  "providedDate": "Aug 2020 - Mar 2020",
+  "cardTitle": "FPV Pilot & Hobbyist",
+  "cardSubtitle": "Drone Builder & Pilot",
+	"cardDetailedText": [
+	"1) Build and customize FPV drones (Creative Engineering, Aerial Design).",
+	"2) Perform aerial demonstrations and freestyle flights that highlight precision, creativity, and spatial awareness (Freestyle FPV, Live Performance)",
+	"3) Pilot drones in open fields and indoor environments for performance testing and video recording (FPV Piloting)."
+  ],
+  "fields": ["All","Other"]
+	},
+
+
+	{
+    "providedDate": "Mar 2020 - Mar 2019",
+    "cardTitle": "Drone Competition",
+    "cardSubtitle": "Drone Builder & Pilot",
+    "cardDetailedText": [
+      "1) Design and assemble custom drones for aerial photography, racing, and educational demonstrations (Drone Engineering, Soldering, Flight Control).",
+      "2) Configure and calibrate flight controllers, ESCs, and sensors for optimal performance and stability (PID Tuning, Sensor Integration).",
+      "3) Pilot drones for live events, workshops, and technical showcases, adhering to safety and airspace regulations (FPV Piloting, Event Coordination).",
+      "4) Experiment with payload integration and automation systems for future autonomous applications (Engineering Prototyping, System Testing)."
+    ],
+    "fields": ["All", "Engineering"]
+  	}
+	,
+
+  
+  {
+    "providedDate": "2018 - 2017",
+    "cardTitle": "Freelance Event Talent",
+    "cardSubtitle": "Mascot Performer",
+    "cardDetailedText": [
+      "1) Performed as costumed mascot during corporate and community events, maintaining high energy and character integrity throughout performances (Physical Endurance, Character Acting).",
+      "2) Engaged with children and adults to create memorable, interactive experiences while ensuring safety and comfort (Crowd Interaction, Event Engagement).",
+      "3) Supported event teams by adapting to various environments, managing heat and visibility challenges within costume (Adaptability, Performance Safety)."
+    ],
+    "fields": ["All", "Other"]
+  }
 	
 ]

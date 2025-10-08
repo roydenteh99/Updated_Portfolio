@@ -56,6 +56,7 @@ function MainContent() {
 			border-2 border-blue-500 
 			w-8/10 md:w-5/10  ">
 				<DisplayPic src = {Dp} alt={"picture_of_me"}/>
+				<div className='absolute top-0'>hi</div>
 			</div>
 	
 			<div className='
@@ -77,31 +78,41 @@ function MainContent() {
 				buttons={[
 					{name:"About", targetId:"About"},
 					{name : "Experience" , targetId:"Experience"},
-					{name: "Contact"},
-					{name : "Projects"}
+					{name: "Projects"},
+					{name : "Contacts"}
 					]}
 					direction='col'
 				/>
-				
-		
-		 
+
 			</div>
 
 		</div>
 		<div id = "About" className="
 		First_layer_about
 		border border-blue-500 
-		w-full
 		p-5
-		text-left">
+		text-left"
+		>
+			<h1 className='mb-5'>About</h1>
 			<MarkdownComponent filepath={aboutPath[field]} />
 
 		</div>
-		<div id ="Experience" className='text-left p-5 w-full overflow-x-auto scroll-smooth' >
+		<div id ="Experience" className='
+		First_layer_Experience
+		text-left 
+		p-5 
+		overflow-x-auto scroll-smooth'
+		 >
 			<h1 className='mb-5'>Experience</h1>
 			<Timeline timelineData={experiencePath} field={field}></Timeline>
 
 					
+		</div>
+		<div id ="Projects" className='text-left p-5 overflow-x-auto scroll-smooth' >
+			<h1 className='mb-5'>Projects</h1>
+			
+
+			
 		</div>
 	</div>
 
