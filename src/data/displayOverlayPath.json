@@ -1,0 +1,8 @@
+{ 	
+	"All" : "/overlayPics/AllOverlay.svg",
+	"Engineering" : "/overlayPics/EngineeringOverlay.svg",
+  	"Education" : "/overlayPics/EducationOverlay.svg",
+  	"Other" : "/overlayPics/OtherOverlay.svg"
+
+
+}

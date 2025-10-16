@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { Chrono } from 'react-chrono';
-import { data } from 'react-router-dom';
+
 
 
 
