@@ -9,7 +9,7 @@ export default function ListWithSubject({data}) {
 
 
 	return(
-	<div className="flex flex-col">
+	<div className="flex flex-col p-4 w-full h-full overflow-y-auto overflow-hidden shrink-0 ">
 	<h2 >{subject}</h2>
 		<ul class="list-disc pl-5">
 			{listForHtml}

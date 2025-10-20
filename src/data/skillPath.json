@@ -1,5 +1,5 @@
 [
-  {
+  {	"iconPath": "/skillPics/Mech.png",
     "subject": "Mechanical Skills",
     "list": [
       ["AutoDesk Inventor & AutoCAD (3D Modeling)"],
@@ -11,7 +11,7 @@
     ],
     "fields": ["Engineering"]
   },
-  {
+  {	"iconPath": "/skillPics/Elec.png",
     "subject": "Electrical Skills",
     "list": [
       ["Schematic Reading & Circuit Design"],
@@ -23,7 +23,7 @@
     ],
     "fields": ["Engineering"]
   },
-  {
+  {	"iconPath": "/skillPics/Prog.png",
     "subject": "Programming",
     "list": [
       ["Python, Java, C++ (General Programming)"],
@@ -35,7 +35,7 @@
     ],
     "fields": ["Engineering"]
   },
-  {
+  {	"iconPath": "/skillPics/Robo.png",
     "subject": "Robotics & Automation",
     "list": [
       ["ROS2 (Nodes, Topics, Actions, Parameters)"],
@@ -47,16 +47,16 @@
     ],
     "fields": ["Engineering"]
   },
-  {
+  {	"iconPath": "/skillPics/Deep.png",
     "subject": "Machine Learning & Vision",
     "list": [
-      ["TensorFlow & OpenCV (Computer Vision & Object Detection)"],
+      ["YOLO ,TensorFlow & OpenCV (Computer Vision & Object Detection)"],
       ["SciKit-Learn, NumPy & Pandas (Data Processing)"],
       ["Model Training & Evaluation (Classification, Regression)"]
     ],
     "fields": ["Engineering"]
   },
-  {
+  {	"iconPath": "/skillPics/SoftTool.png",
     "subject": "Software Tools",
     "list": [
       ["Visual Studio Code (Development Environment)"],
@@ -65,41 +65,41 @@
     ],
     "fields": ["Engineering"]
   },
-{
-  "subject": "Education & Training",
-  "list": [
-    ["STEM Teaching (Python, LEGO EV3, Scratch, Micro:bit)"],
-    ["Curriculum Design & Lesson Planning"],
-    ["Drone Programming Workshops (Applied Learning)"],
-    ["Adult Digital Literacy (Google Workspace Training)"],
-    ["Classroom Management & Student Engagement"],
-    ["Online Facilitation (Zoom, Slides, Digital Tools)"]
-  ],
+{	"iconPath": "/skillPics/Train.png",
+  	"subject": "Education & Training",
+  	"list": [
+		["STEM Teaching (Python, LEGO EV3, Scratch, Micro:bit)"],
+		["Curriculum Design & Lesson Planning"],
+		["Drone Programming Workshops (Applied Learning)"],
+		["Adult Digital Literacy (Google Workspace Training)"],
+		["Classroom Management & Student Engagement"],
+		["Online Facilitation (Zoom, Slides, Digital Tools)"]
+  	],
   "fields": ["Education"]
 },
-{
-  "subject": "Academic Teaching – PSLE & O-Level",
-  "list": [
-    ["Mathematics & Science (Concepts, Applications, and Exam Techniques)"],
-    ["Lesson Delivery for Different Learning Levels"],
-    ["Interactive Learning through Experiments and Visual Tools"],
-    ["Progress Tracking and Concept Reinforcement"]
-  ],
+{	"iconPath": "/skillPics/Acad.png",
+	"subject": "Academic Teaching – PSLE & O-Level",
+	"list": [
+			["Mathematics & Science (Concepts, Applications, and Exam Techniques)"],
+			["Lesson Delivery for Different Learning Levels"],
+			["Interactive Learning through Experiments and Visual Tools"],
+			["Progress Tracking and Concept Reinforcement"]
+  	],
   "fields": ["Education"]
 },
-{
-  "subject": "Public Speaking & Communication",
-  "list": [
-    ["Delivered motivational and technical talks to over 100 students"],
-    ["Adapted speech style for varied age groups and engagement levels"],
-    ["Developed presentation content using slides and visual aids"],
-    ["Facilitated Q&A and interactive discussions confidently"]
-  ],
-  "fields": ["Education"]
+{	"iconPath": "/skillPics/Public.png",
+	"subject": "Public Speaking & Communication",
+	"list": [
+			["Delivered motivational and technical talks to over 100 students"],
+			["Adapted speech style for varied age groups and engagement levels"],
+			["Developed presentation content using slides and visual aids"],
+			["Facilitated Q&A and interactive discussions confidently"]
+		],
+	"fields": ["Education"]
 },
-{
-  "subject": "Creative Performance",
-  "list": [
+{ 	"iconPath": "/skillPics/Perf.png",
+  	"subject": "Creative Performance",
+  	"list": [
     ["Wushu Performance (Precision & Discipline)"],
     ["Cultural Promotion & Public Demonstrations"],
     ["Team Collaboration in Live Shows"],
@@ -107,19 +107,19 @@
   ],
   "fields": ["Other"]
 },
-{
-  "subject": "Stage & Screen Acting",
-  "list": [
-    ["Character Acting & Improvisation"],
-    ["Emotional Expression and Timing"],
-    ["Script Interpretation and Adaptation"],
-    ["Collaboration with Directors and Cast Members"]
-  ],
-  "fields": ["Other"]
+{	"iconPath": "/skillPics/Acting.png",
+	"subject": "Stage & Screen Acting",
+	"list": [
+	["Character Acting & Improvisation"],
+	["Emotional Expression and Timing"],
+	["Script Interpretation and Adaptation"],
+	["Collaboration with Directors and Cast Members"]
+	],
+	"fields": ["Other"]
 },
-{
-  "subject": "FPV Drone Flying & Aerial Filming",
-  "list": [
+{	"iconPath": "/skillPics/FPV.png",
+  	"subject": "FPV Drone Flying & Aerial Filming",
+  	"list": [
     ["FPV Drone Operation and Maintenance"],
     ["Aerial Cinematography and Creative Angling"],
     ["Flight Planning and Safety Awareness"],
@@ -127,7 +127,7 @@
   ],
   "fields": ["Other"]
 },
-  {
+  { "iconPath": "/skillPics/Drone.png",
     "subject": "Drone Engineering",
     "list": [
       ["FPV Drone Assembly (Frame, Motors, Flight Controller)"],

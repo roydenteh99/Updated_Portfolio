@@ -12,7 +12,7 @@ function MarkdownComponent({filepath}) {
   console.log(filepath);
 
   return (
-    <section>
+    <section className="text-2xl">
       <ReactMarkdown>{markdownContent}</ReactMarkdown>
     </section>
   );

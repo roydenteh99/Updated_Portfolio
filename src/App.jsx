@@ -21,7 +21,7 @@ import Timeline from './UIComponents/Timeline/Timeline';
 import CardList from './UIComponents/Card/CardList';
 import ContactList from './UIComponents/ContactComponent/ContactList';
 import ListOfList from './UIComponents/ListWithSubject/ListOfList';
-
+import CardFlip from './UIComponents/CardFlip/CardFlip';
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 import aboutPath from "./data/aboutPath.json";
@@ -70,7 +70,6 @@ function MainContent() {
 	{/* ─── Profile Section ─────────────────────────────────────────────── */}
 		<header className='
 		First_Layer 
-		border-1 box-border
 		md:text-2xl
 		flex flex_wrap
 		flex-col md:flex-row-reverse 
@@ -81,7 +80,6 @@ function MainContent() {
 		'>
 			<div
 			className="
-				border-2 border-blue-500
 				w-8/10 md:w-5/10
 				relative
 				overflow-hidden
@@ -105,7 +103,6 @@ function MainContent() {
 			</div>
 				
 			<div className='
-			border-2 border-blue-500 
 			flex flex-col space-y-2 
 			self-center
 			w-full 
@@ -134,8 +131,7 @@ function MainContent() {
 		</header>
 
 		{/* ─── About Section ─────────────────────────────────────────────── */}
-		<section id = "About" className="
-		border border-blue-500 "
+		<section id = "About" className=""
 		>
 			<h1 className='mb-5'>About</h1>
 			<MarkdownComponent filepath={aboutPath[field]} />
@@ -143,11 +139,11 @@ function MainContent() {
 		</section>
 		{/* ─── Skill Section ─────────────────────────────────────────────── */}
 		<section id = "Skills" >
-		<h1 className='mb-5'>Skills</h1>
-		<ListOfList list_of_list = {skillPath} field ={field}/>
-
-
+			<h1 className='mb-5'>Skills</h1>
+			<ListOfList list_of_list = {skillPath} field ={field}/>
 		</section>
+
+
 		{/* ─── Experience Section ─────────────────────────────────────────────── */}
 		<section id ="Experience" className='
 		overflow-x-auto scroll-smooth'
@@ -178,12 +174,15 @@ function MainContent() {
 			{contactIntroPath[field]}
 		</p>
 		<ContactList items ={[
-			{label: "GitHub", icon: <FaGithub />, link: "https://github.com/royden" },
+			{label: "GitHub", icon: <FaGithub />, link: "https://github.com/roydenteh99" },
 			{label: "LinkedIn", icon: <FaLinkedin />, link: "https://www.linkedin.com/in/royden-teh-2b4b0215b/"},
 			{label: "Gmail", icon: <FaEnvelope />, link: "mailto:roydenteh100@gmail.com" , linkDisplay: "roydenteh100@gmail.com"}
 			
 			]}/>
-
+		<br/>
+		Credit :
+		<a className="text-sm" href="https://www.flaticon.com/free-icons/public-speaking" title="public speaking icons">Icons created by Freepik - Flaticon</a>
+		<a className="text-sm" href="http://www.freepik.com/" title="Numerous icon">Skills Icons created by Freepik</a>	
 		</footer>
 	</main>
 	

@@ -7,16 +7,18 @@ export default function CardList({cardList , field="All"}) {
 
 	return( 
 	<div className="flex flex-row flex-wrap gap-4 justify-center ">
-		{filteredCards.map((card) => (
+		{filteredCards.map((card, index) => (
 			<div className="
-			basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4
+			basis-full sm:basis-3/4 lg:basis-1/3 xl:basis-1/4
 
 			p-2 md:p-5
 			outline outline-offset-0
-			">
+			"
+			key = {index}
+			>
 			<Card 
 				{...card }
-				key = {card.title}
+				
 				
 			/> 
 			</div>
