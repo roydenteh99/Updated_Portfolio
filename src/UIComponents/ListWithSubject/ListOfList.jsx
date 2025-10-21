@@ -10,7 +10,7 @@ export default function ListOfList({ list_of_list = [], field = "All" }) {
     );
 
     return (
-        <div className="flex flex-col md:flex-row gap-2 md:gap-20 flex-wrap   p-4">
+        <div className="flex flex-col  md:flex-row gap-2 md:gap-20 flex-wrap   p-4">
             {filtered_list.map((single_list, index) => {
                 
                 // 2. Define the content for the back of the card

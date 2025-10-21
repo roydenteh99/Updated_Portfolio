@@ -15,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-p{
+p {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 1.2 rem;
   line-height: 1.5;
@@ -38,11 +38,18 @@ a:hover {
   color: #535bf2;
 }
 
+.section-title {
+	text-decoration: underline;
+	text-underline-offset: 10px;
+	text-decoration-color: var(--color-yellow-300);
+	margin-bottom: 2rem;
+	text-align: center;
+}
 
 
 h1 {
 
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   font-weight: 700;
 
   line-height: 1.1;
@@ -71,9 +78,24 @@ h3 {
 
 
 section {
-	padding: 1.25rem;
+	padding: 2rem;
 	text-align: left;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
 
+}
+
+.section-content {
+  position: relative;   /* relative for z-index positioning */
+  z-index: 10;          /* stay above background Wave */
+}
+
+.section-title {
+	text-decoration: underline;
+	text-underline-offset: 10px;
+	text-decoration-color: var(--color-yellow-400);
+	margin-bottom: 2rem;
+	text-align: center;
 }
 
 button {
@@ -84,7 +106,7 @@ button {
   font-size: 0.8em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #c78c1d;
   cursor: pointer;
   transition: border-color 0.25s;
 }

@@ -14,6 +14,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 // ─── UI Components ────────────────────────────────────────────────────────────
 
+import { Wave, Diamond } from './UIComponents/ShapeDivider';
 import { MyButtonGroup } from './UIComponents/MyButtonGroup/MyButtonGroup';
 import BasicSelect from './UIComponents/BasicSelect/BasicSelect';
 import MarkdownComponent from './UIComponents/MarkdownComponent/MarkdownComponent';
@@ -22,6 +23,7 @@ import CardList from './UIComponents/Card/CardList';
 import ContactList from './UIComponents/ContactComponent/ContactList';
 import ListOfList from './UIComponents/ListWithSubject/ListOfList';
 import CardFlip from './UIComponents/CardFlip/CardFlip';
+
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 import aboutPath from "./data/aboutPath.json";
@@ -69,7 +71,8 @@ function MainContent() {
 
 	{/* ─── Profile Section ─────────────────────────────────────────────── */}
 		<header className='
-		First_Layer 
+		First_Layer
+		
 		md:text-2xl
 		flex flex_wrap
 		flex-col md:flex-row-reverse 
@@ -131,16 +134,23 @@ function MainContent() {
 		</header>
 
 		{/* ─── About Section ─────────────────────────────────────────────── */}
-		<section id = "About" className=""
-		>
-			<h1 className='mb-5'>About</h1>
+		<section id = "About" className="relative">
+			<Wave />
+			<div className="section-content p-4 pt-40 md:pt-20 ">
+			<h1 className='section-title'>About</h1>
+			<h1 className='italic'>Hello! I'm Royden Teh</h1>
+			<p>(Bachelor Degree in  Mechanical Engineering with Honours)</p>
 			<MarkdownComponent filepath={aboutPath[field]} />
+			</div>
 
 		</section>
 		{/* ─── Skill Section ─────────────────────────────────────────────── */}
-		<section id = "Skills" >
-			<h1 className='mb-5'>Skills</h1>
+		<section id = "Skills" className="relative" >
+			<Diamond />
+			<div className="section-content p-4 md:pt-20 ">
+			<h1 className='section-title'>Skills</h1>
 			<ListOfList list_of_list = {skillPath} field ={field}/>
+			</div>
 		</section>
 
 
@@ -148,7 +158,7 @@ function MainContent() {
 		<section id ="Experience" className='
 		overflow-x-auto scroll-smooth'
 		 >
-			<h1 className='mb-5'>Experience</h1>
+			<h1 className='section-title'>Experience</h1>
 			<Timeline timelineData={experiencePath} field={field}></Timeline>
 
 					
@@ -157,7 +167,7 @@ function MainContent() {
 		{/* ─── Projects Section ─────────────────────────────────────────────── */}
 		<section id ="Projects" className='
 		 overflow-x-auto scroll-smooth' >
-			<h1 className='mb-5'>Projects</h1>
+			<h1 className='section-title'>Projects</h1>
 			<CardList cardList = {projectPath} field = {field}/>
 	
 			
@@ -168,7 +178,7 @@ function MainContent() {
 		id="Contacts"
 		className="w-full bg-gray-100 dark:bg-gray-900 text-left p-10 flex flex-col items-start"
 		>
-		<h1 className="mb-5">Contact</h1>
+		<h1 className="section-title">Contact</h1>
 
 		<p className="mb-4 max-w-2xl">
 			{contactIntroPath[field]}

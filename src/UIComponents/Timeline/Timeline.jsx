@@ -6,8 +6,20 @@ import { Chrono } from 'react-chrono';
 
 
 export default function Timeline({timelineData, field}) {
-  const [items, setItems] = useState([]);
-  const minWidthValue = items.length * 300;
+	const [items, setItems] = useState([]);
+	const minWidthValue = items.length * 300;
+	const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	const light_theme = {	
+		primary: "#FDC435",
+		cardTitleColor: "#FDC435",
+		titleColor: "#FDC435"
+			};
+
+	const dark_theme = {
+		primary: "#d69d22",
+		cardTitleColor: "#d69d22",
+		titleColor: "#d69d22"
+				};
 
   useEffect(() => {
     // Convert each item to include MarkdownComponent
@@ -21,8 +33,6 @@ export default function Timeline({timelineData, field}) {
 	console.log("field change");
 	console.log({field});
   }, [timelineData ,field]);
-
-  
 
 
 
@@ -49,6 +59,9 @@ return (
             showAllCardsHorizontal={true}
             disableToolbar={true}
             useReadMore={true}
+			darkMode={prefersDarkMode}
+			theme={prefersDarkMode ? dark_theme : light_theme}
+
           />
         </div>
       )}
