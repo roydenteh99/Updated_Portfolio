@@ -1,0 +1,3 @@
+Passionate about helping others learn, I’ve taught both children and adults across a wide range of topics — from science and STEM robotics to Google Workspace productivity. My teaching style focuses on practical, hands-on learning and adapting to each learner’s pace and background.
+Whether guiding students through drone programming or helping adults gain confidence in digital tools, I emphasize engagement, clarity, and curiosity. My experience across various institutes and training platforms has strengthened my ability to simplify complex ideas and make learning enjoyable for all ages.
+
