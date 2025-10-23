@@ -15,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-p {
+p{
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 1.2 rem;
   line-height: 1.5;
@@ -85,6 +85,11 @@ section {
 
 }
 
+section.timeline {
+	padding: 0;
+
+}
+
 .section-content {
   position: relative;   /* relative for z-index positioning */
   z-index: 10;          /* stay above background Wave */
@@ -127,6 +132,6 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #e0dbdb;
   }
 }

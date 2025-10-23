@@ -15,11 +15,11 @@ export default function Timeline({timelineData, field}) {
 		titleColor: "#FDC435"
 			};
 
-	const dark_theme = {
-		primary: "#d69d22",
-		cardTitleColor: "#d69d22",
-		titleColor: "#d69d22"
-				};
+const dark_theme = {
+  primary: "#f0b429",        // lighter, warm golden
+  cardTitleColor: "#f0b429",
+  titleColor: "#f0b429"
+};
 
   useEffect(() => {
     // Convert each item to include MarkdownComponent

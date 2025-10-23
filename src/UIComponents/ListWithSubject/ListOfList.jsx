@@ -24,11 +24,11 @@ export default function ListOfList({ list_of_list = [], field = "All" }) {
 							alt={'Icon'} 
 							className=" w-25 h-25 object-contain"
 						/>
-                        <p className="text-sm text-black-200 mt-2">
+                        <h3 className="text-sm text-black-200 mt-2">
+							<br/>
                             Click to reveal more details
-                            <br/>
-                            Fields: {single_list.fields.join(', ')}
-                        </p>
+
+                        </h3>
                     </div>
                 );
 

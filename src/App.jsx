@@ -14,7 +14,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 // ─── UI Components ────────────────────────────────────────────────────────────
 
-import { Wave, Diamond } from './UIComponents/ShapeDivider';
+import { Wave, Diamond , Mapish} from './UIComponents/ShapeDivider';
 import { MyButtonGroup } from './UIComponents/MyButtonGroup/MyButtonGroup';
 import BasicSelect from './UIComponents/BasicSelect/BasicSelect';
 import MarkdownComponent from './UIComponents/MarkdownComponent/MarkdownComponent';
@@ -32,6 +32,7 @@ import displayOverlay from './data/displayOverlayPath.json';
 import experiencePath from "./data/experiencePath.json";
 import projectPath from "./data/projectPath.json";
 import contactIntroPath from "./data/contactIntroPath.json";
+import	CVPath from "./data/CVPath.json";
 
 // ─── Styles ───────────────────────────────────────────────────────────────────
 import './App.css';
@@ -125,6 +126,7 @@ function MainContent() {
 					{name : "Experience" , targetId:"Experience"},
 					{name: "Projects", targetId:"Projects"},
 					{name : "Contacts", targetId:"Contacts"},
+					{name : "Get CV", link: CVPath[field] ? CVPath[field] : CVPath["Engineering"] },
 					]}
 					direction='col'
 				/>
@@ -156,10 +158,17 @@ function MainContent() {
 
 		{/* ─── Experience Section ─────────────────────────────────────────────── */}
 		<section id ="Experience" className='
-		overflow-x-auto scroll-smooth'
-		 >
+		timeline
+		relative
+		overflow-x-auto scroll-smooth
+		p-0'
+		
+		 >	
+			<Mapish/>
+			<div className="section-content pt-40 md:pt-35 ">
 			<h1 className='section-title'>Experience</h1>
 			<Timeline timelineData={experiencePath} field={field}></Timeline>
+			</div>
 
 					
 		</section>
@@ -176,7 +185,7 @@ function MainContent() {
 	{/* ─── Contact Section ─────────────────────────────────────────────── */}
 		<footer
 		id="Contacts"
-		className="w-full bg-gray-100 dark:bg-gray-900 text-left p-10 flex flex-col items-start"
+		className="w-full bg-yellow-50 dark:bg-gray-900 text-left p-10 flex flex-col items-start"
 		>
 		<h1 className="section-title">Contact</h1>
 

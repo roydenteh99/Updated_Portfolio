@@ -12,7 +12,9 @@ export default function CardList({cardList , field="All"}) {
 			basis-full sm:basis-3/4 lg:basis-1/3 xl:basis-1/4
 
 			p-2 md:p-5
-			outline outline-offset-0
+			rounded-xl
+ 			border
+    		border-gray-300 dark:border-gray-700
 			"
 			key = {index}
 			>

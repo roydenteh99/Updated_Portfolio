@@ -1,3 +1,4 @@
+
 export default function Wave({opacity= "0.8" }) {
 	const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 	
