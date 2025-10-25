@@ -10,12 +10,12 @@ export default function ListOfList({ list_of_list = [], field = "All" }) {
     );
 
     return (
-        <div className="flex flex-col  md:flex-row gap-2 md:gap-20 flex-wrap   p-4">
+        <div className="flex flex-col  md:flex-row items-center gap-2 md:gap-20 flex-wrap  p-4">
             {filtered_list.map((single_list, index) => {
                 
                 // 2. Define the content for the back of the card
                 const frontContent = (
-                    <div className="p-4 text-center justify-items-center rounded-xl border-4  w-full h-full">
+                    <div className="p-4 text-center justify-items-center rounded-xl border-4  w-full h-full bg-yellow-200/25">
                         <h2 className="text-xl font-bold">
                             {single_list.subject || 'List Info'} 
                         </h2>
@@ -34,12 +34,12 @@ export default function ListOfList({ list_of_list = [], field = "All" }) {
 
                 // 3. Define the content for the front of the card
                 // This is your existing ListWithSubject component.
-                const backContent = <div className="border-4 rounded-xl w-full h-full">
+                const backContent = <div className="border-4 rounded-xl w-full h-full h-full bg-yellow-200/25">
 				 <ListWithSubject data={single_list} />
 				 </div>;
                 
                 return (
-                    <div key={index} className="flex-shrink-0 w-64">
+                    <div key={index} className="">
                         <CardFlip 
                             // 4. Pass the ListWithSubject component as the Front Side
                             frontContent={frontContent} 

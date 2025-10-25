@@ -13,12 +13,12 @@ export default function CardFlip({frontContent =<h1>front Side</h1>, backContent
         transition={{ duration: 0.5 }}
       >
         <div style={{ position: "absolute", width: "100%", height: "100%", backfaceVisibility: "hidden", 
-			display: "flex", alignItems: "center", justifyContent: "center"}}>
+			display: "flex", justifyContent: "center"}}>
           {frontContent || <p>Front</p>}
         </div>
 
         <div style={{ position: "absolute", width: "100%", height: "100%", backfaceVisibility: "hidden",
-			 transform: "rotateY(180deg)", display: "flex", alignItems: "center", justifyContent: "center", }}>
+			 transform: "rotateY(180deg)", display: "flex", justifyContent: "center", }}>
           {backContent}
         </div>
       </motion.div>

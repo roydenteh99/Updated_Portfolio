@@ -78,11 +78,17 @@ h3 {
 
 
 section {
-	padding: 2rem;
+	padding: 0.5rem;
 	text-align: left;
 	margin-bottom: 1.5rem;
 	margin-top: 1.5rem;
 
+}
+
+@media (min-width: 768px) {
+    section {
+		padding: 2rem;
+    }
 }
 
 section.timeline {
@@ -111,7 +117,7 @@ button {
   font-size: 0.8em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #c78c1d;
+  background-color: #ffb300;
   cursor: pointer;
   transition: border-color 0.25s;
 }
