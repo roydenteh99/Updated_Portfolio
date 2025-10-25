@@ -1,44 +1,44 @@
 [
 
 	{
-		"img": "/projectPics/Game_portfolio.png",
+		"img": "projectPics/Game_portfolio.png",
 		"title": "Web Hosted Educational Science Game",
 		"text": "Developed a browser-based science learning game to teach physics concepts interactively, using engaging visuals and gamified quizzes.",
 		"fields": ["All", "Education", "Engineering"]
 	},
 	{
-		"img": "/projectPics/ROS2EnabledCar.jpg",
+		"img": "projectPics/ROS2EnabledCar.jpg",
 		"title": "Raspberry Pi 4 Car with ROS2",
 		"text": "Configured a Raspberry Pi-powered car running ROS2 for real-time control, mapping, and object detection using onboard sensors.",
 		"fields": ["All", "Engineering"]
 	},
 	{
-		"img": "/projectPics/GazeboSimulation.png",
+		"img": "projectPics/GazeboSimulation.png",
 		"title": "Gazebo Simulation (ROS2)",
 		"text": "Built a ROS2-based Gazebo simulation environment to test autonomous navigation, sensor integration, and robot control logic in a virtual setup.",
 		"fields": ["All", "Engineering"]
 	},
 	{
-		"img": "/projectPics/IMDAChallenge.png",
+		"img": "projectPics/IMDAChallenge.png",
 		"title": "Computer Vision Integrated with Drone API",
 		"text": "Implemented a computer vision system that detects and tracks objects through a drone API, enabling semi-autonomous aerial responses.",
 		"fields": ["All", "Engineering","Education"]
 	},
 	{
-		"img": "/projectPics/ElevatorSimulation.png",
+		"img": "projectPics/ElevatorSimulation.png",
 		"title": "Web App Elevator Simulation – AMR Interaction",
 		"text": "Developed a web app simulating elevator-AMR communication for testing robot coordination and system response logic.",
 		"fields": ["All", "Engineering"]
 	},
 	{
-		"img": "/projectPics/DroneSAFMC.png",
+		"img": "projectPics/DroneSAFMC.png",
 		"title": "Drone for SAFMC Competition",
 		"text": "Designed and programmed an autonomous drone for the Singapore Amazing Flying Machine Competition, focusing on stability and mission precision.",
 		"fields": ["All", "Engineering"]
 	},
 
 	{
-		"img": "/projectPics/CollapsibleFireManLadder.png",
+		"img": "projectPics/CollapsibleFireManLadder.png",
 		"title": "Portable Fireman Ladder for AES",
 		"text": "Engineered a lightweight collapsible ladder prototype to aid emergency responders in confined-space rescue operations.",
 		"fields": ["All", "Engineering", "Other"]

@@ -1,7 +1,7 @@
 {
-	"All": "/aboutSection/aboutAll.md",
-	"Engineering": "/aboutSection/aboutEngineering.md",
-	"Education" :"/aboutSection/aboutEducation.md",
-	"Other":"/aboutSection/aboutOther.md"
+	"All": "aboutSection/aboutAll.md",
+	"Engineering": "aboutSection/aboutEngineering.md",
+	"Education" :"aboutSection/aboutEducation.md",
+	"Other":"aboutSection/aboutOther.md"
 
 }
