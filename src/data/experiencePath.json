@@ -8,7 +8,7 @@
 	"1) Conduct engaging online lessons to help primary school students understand key science concepts through interactive teaching methods (Online Learning, Primary Science).",
 	"2) Adapt teaching strategies to handle students with varying learning paces and attention spans, maintaining engagement and motivation (Classroom Management, Student Engagement).",
 	"3) Communicate effectively and patiently with demanding parents and supervisors to ensure student progress and satisfaction (Parent Communication, Conflict Management).",
-	"4) Manage challenges in the existing syllabus and errata by clarifying misconceptions, correcting outdated content, and developing clearer explanations (Curriculum Adaptation, Content Revision)."
+	"4) Manage challenges in the existing syllabus by clarifying misconceptions, correcting outdated content, and developing clearer explanations (Curriculum Adaptation, Content Revision)."
 	],
 	"fields": ["All", "Education"]
 	}
@@ -31,7 +31,7 @@
 	"cardTitle" : "GSA",
 	"cardSubtitle": "Trainer (Google Workspace for Adults)",
 	"cardDetailedText": [
-	"1) Conducted hands-on training sessions for adult learners on (Google Workspace tools, including Docs, Sheets, and Drive).",
+	"1) Conducted hands-on training sessions for adult learners (Google Workspace tools, including Docs, Sheets, and Drive).",
 	"2) Designed beginner-friendly lessons focusing on practical, workplace-oriented applications.",
 	"3) Provided one-on-one guidance to help participants gain confidence in online collaboration",
 	"4) Assessed participants’ progress and adapted teaching pace to accommodate varied digital literacy levels."
@@ -46,9 +46,9 @@
     "cardTitle": "Omni-Health ",
     "cardSubtitle": "Robotic Engineer",
 	"cardDetailedText":[
-		"1) Build and deploy web applications and robots for the healthcare sector using (Node.js, Postman, and Visual Studio Code).",
-      	"2) Provide technical support for local and overseas operations, including (SR, Keenon, Yu Jin, and Temi.)",
-      	"3) Perform mapping and parameter setups for (AGVs/AMRs), utilizing (Linux commands) for configuration.",
+		"1) Build and deploy web applications and robots for the healthcare sector (Node.js, Postman, and Visual Studio Code).",
+      	"2) Provide technical support for local and overseas operations (SR, Keenon, Yu Jin, and Temi.)",
+      	"3) Perform mapping and parameter setups (AGVs/AMRs), and utilization (Linux commands) for configuration.",
       	"4) Facilitate communication with customers and the company through reports (MS Office, Canva) and inquiries."
      	],
     "fields": ["All", "Engineering"]
