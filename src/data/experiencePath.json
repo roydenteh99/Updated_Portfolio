@@ -1,7 +1,19 @@
-  [	
+	[{
+	"providedDate": "Present - March 2026 ",
+	"cardTitle": "Avetics Global",
+	"cardSubtitle": "UAS Field Engineer",
+	"cardDetailedText": [
+	"1) Liaise with CAAS on legal and administrative matters, including permit applications.",
+	"2) Operate drones under Class A and Class B UAPL certifications , and  conduct lessons for clients on drone operations and safety protocols (Drone Operations, Safety Training).",
+	"3) Manage operational logistics and safety requirements.",
+	"4) Provide engineering solutions for custom design requirements."
+	],
+	"fields": ["All", "Engineering"]
+	}
+	,
 
 	{
-	"providedDate" : "Present - March 2025",
+	"providedDate" : "December 2025 - March 2025",
 	"cardTitle": "Grade Solution",
 	"cardSubtitle": "Science Tutor",
 	"cardDetailedText": [
@@ -14,7 +26,7 @@
 	}
 	,
 	{
-	"providedDate" : "Present - Feb 2025",
+	"providedDate" : "March 2026 - February 2025",
 	"cardTitle": "65Drones",
 	"cardSubtitle": "Applied Engineering Instructor",
 	"cardDetailedText": [

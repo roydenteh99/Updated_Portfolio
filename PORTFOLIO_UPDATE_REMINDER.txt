@@ -1,0 +1,146 @@
+PORTFOLIO UPDATE REMINDER
+==========================
+
+Project: Updated_Portfolio
+
+1. START THE WEBSITE
+--------------------
+Open a terminal in this folder and run:
+
+  npm install       (only needed after a fresh clone)
+  npm run dev
+
+Open the localhost URL shown by Vite, usually:
+  http://localhost:5173
+
+2. UPDATE ABOUT TEXT
+--------------------
+Edit the Markdown files in:
+
+  public/aboutSection/
+
+Files:
+  aboutAll.md
+  aboutEngineering.md
+  aboutEducation.md
+  aboutOther.md
+
+3. UPDATE SKILLS
+----------------
+Edit:
+  src/data/skillPath.json
+
+Example:
+
+  {
+    "iconPath": "skillPics/NewSkill.png",
+    "subject": "New Skill Category",
+    "list": [
+      ["First skill"],
+      ["Second skill"]
+    ],
+    "fields": ["Engineering"]
+  }
+
+Put the image here:
+  public/skillPics/NewSkill.png
+
+4. UPDATE EXPERIENCE
+--------------------
+Edit:
+  src/data/experiencePath.json
+
+Example:
+
+  {
+    "providedDate": "September 2026 - Present",
+    "cardTitle": "Company Name",
+    "cardSubtitle": "Job Title",
+    "cardDetailedText": [
+      "Responsibility or achievement one.",
+      "Responsibility or achievement two."
+    ],
+    "fields": ["All", "Engineering"]
+  }
+
+Keep newer experience entries near the beginning of the file.
+Include "All" if the entry should appear in the All timeline.
+
+5. UPDATE PROJECTS
+------------------
+Edit:
+  src/data/projectPath.json
+
+Example:
+
+  {
+    "img": "projectPics/MyProject.png",
+    "title": "My Project",
+    "text": "A short description of the project.",
+    "fields": ["All", "Engineering"]
+  }
+
+Put the image here:
+  public/projectPics/MyProject.png
+
+6. UPDATE CV LINKS
+------------------
+Edit:
+  src/data/CVPath.json
+
+Add or replace links for Engineering, Education, or other fields.
+If a field has no CV link, the page currently falls back to Engineering.
+
+7. UPDATE CONTACT DETAILS
+-------------------------
+Contact introduction text:
+  src/data/contactIntroPath.json
+
+GitHub, LinkedIn, and email links:
+  src/App.jsx
+
+8. FIELD FILTERS
+----------------
+Available fields are defined in src/App.jsx:
+
+  All
+  Engineering
+  Education
+  Other
+
+Use the exact spelling and capitalization in every JSON file.
+
+9. IMAGE PATH RULE
+------------------
+For files inside public/, use paths without "public/":
+
+  Correct:   projectPics/MyProject.png
+  Incorrect: public/projectPics/MyProject.png
+
+Paths and filenames are case-sensitive.
+
+10. CHECK BEFORE FINISHING
+--------------------------
+Run:
+
+  npm run lint
+  npm run build
+
+The build must pass before deployment.
+
+Known current issues:
+- ESLint reports an unused motion import in src/UIComponents/CardFlip/CardFlip.jsx.
+- The production build reports a large bundle warning, but still completes.
+
+11. DEPLOY
+----------
+Commit and push changes to the main branch.
+GitHub Actions automatically builds and deploys the site to GitHub Pages.
+
+Useful files:
+  src/App.jsx                 Main page structure and contact links
+  src/index.css               Global styling
+  src/App.css                 App-specific styling
+  src/data/                   Portfolio content
+  public/                     Markdown and image files
+  .github/workflows/deploy.yml Deployment workflow
