@@ -49,6 +49,7 @@ function MainContent() {
   	const rawField =  location.pathname.replace("/", "");
 	const initialField = fields.includes(rawField) ? rawField : "All"
   	const [field, setfield] = useState(initialField);
+	const [overlayVisible, setOverlayVisible] = useState(false);
 
 	// sync state with URL hash
 	useEffect(() => {
@@ -56,6 +57,7 @@ function MainContent() {
 		const hashField = location.pathname.replace("/", "");
 		if (hashField && hashField !== field && fields.includes(hashField)) {
 				setfield(hashField);
+				setOverlayVisible(false);
 			}
   		}, [location.pathname, field]);
 	
@@ -68,7 +70,7 @@ function MainContent() {
 
 
 	return (
-	<main>
+	<main data-field={field}>
 
 	{/* ─── Profile Section ─────────────────────────────────────────────── */}
 		<header className='
@@ -87,7 +89,18 @@ function MainContent() {
 				w-8/10 md:w-5/10
 				relative
 				overflow-hidden
+				profile-image
 			"
+			onClick={() => setOverlayVisible((visible) => !visible)}
+			onKeyDown={(event) => {
+				if (event.key === "Enter" || event.key === " ") {
+					event.preventDefault();
+					setOverlayVisible((visible) => !visible);
+				}
+			}}
+			tabIndex="0"
+			role="button"
+			aria-label="Show field overlay on profile picture"
 			>
 			{/* Base picture */}
 			<img
@@ -97,7 +110,7 @@ function MainContent() {
 			/>
 
 			{/* Overlay on hover */}
-			<div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
+			<div className={`image-overlay absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 ${overlayVisible ? "is-visible" : ""}`}>
 				<img
 				src={displayOverlay[field]}
 				alt="Overlay"
@@ -137,7 +150,7 @@ function MainContent() {
 
 		{/* ─── About Section ─────────────────────────────────────────────── */}
 		<section id = "About" className="relative">
-			<Wave />
+			<Wave field={field} />
 			<div className="section-content p-4 pt-40 md:pt-20 ">
 			<h1 className='section-title'>About</h1>
 			<h1 className='italic'>Hello! I'm Royden Teh</h1>
@@ -148,7 +161,7 @@ function MainContent() {
 		</section>
 		{/* ─── Skill Section ─────────────────────────────────────────────── */}
 		<section id = "Skills" className="relative" >
-			<Diamond />
+			<Diamond field={field} />
 			<div className="section-content p-4 md:pt-20 ">
 			<h1 className='section-title'>Skills</h1>
 			<ListOfList list_of_list = {skillPath} field ={field}/>
@@ -164,7 +177,7 @@ function MainContent() {
 		p-0'
 		
 		 >	
-			<Mapish/>
+			<Mapish field={field} />
 			<div className="section-content pt-40 md:pt-35 ">
 			<h1 className='section-title'>Experience</h1>
 			<Timeline timelineData={experiencePath} field={field}></Timeline>

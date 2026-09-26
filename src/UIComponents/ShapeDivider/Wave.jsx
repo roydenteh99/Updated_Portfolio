@@ -1,9 +1,11 @@
 
-export default function Wave({opacity= "0.8" }) {
+export default function Wave({opacity= "0.8", field = "All" }) {
 	const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 	
-	var color1 = prefersDarkMode ? "#FFC94D" : "#FFE066";
-	var color2 = prefersDarkMode ? "#b47f1a" : "#FDC435";
+  const palettes = { All: ["#d5dfd0", "#aab7a3"], Engineering: ["#c6ded8", "#8eafa7"], Education: ["#ead9b7", "#c8b98e"], Other: ["#d9cce0", "#b4a5bc"] };
+  const [lightStart, lightEnd] = palettes[field] || palettes.All;
+  const color1 = prefersDarkMode ? lightEnd : lightStart;
+  const color2 = prefersDarkMode ? "#202522" : lightEnd;
 	
 	return (
     <svg

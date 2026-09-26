@@ -1,10 +1,10 @@
 
 
-export default function Mapish({opacity= "0.8" }) {
+export default function Mapish({opacity= "0.8", field = "All" }) {
 	const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 	
-	var color1 = prefersDarkMode ? "#A65E00" : "#FFF7A5";  // soft butter yellow  
-	var color2 = prefersDarkMode ? "#FF9900" : "#FFE680";  // gentle light amber
+	const palettes = { All: ["#e0e7dc", "#b8c5b1"], Engineering: ["#d3e5e1", "#a0c3ba"], Education: ["#f0e1c3", "#d2bd8f"], Other: ["#e5d9e8", "#c0aec8"] };
+	const [color1, color2] = palettes[field] || palettes.All;
 
 	
 	return(

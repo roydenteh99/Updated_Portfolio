@@ -3,3 +3,12 @@
   
   text-align: center;
 }
+
+.profile-image:focus-visible {
+  outline: 3px solid var(--color-terracotta);
+  outline-offset: 4px;
+}
+
+.image-overlay.is-visible {
+  opacity: 1;
+}

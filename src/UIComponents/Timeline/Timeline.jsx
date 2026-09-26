@@ -9,16 +9,18 @@ export default function Timeline({timelineData, field}) {
 	const [items, setItems] = useState([]);
 	const minWidthValue = items.length * 300;
 	const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-	const light_theme = {	
-		primary: "#FDC435",
-		cardTitleColor: "#FDC435",
-		titleColor: "#FDC435"
+	const themeColors = { All: "#a9573e", Engineering: "#287f83", Education: "#b27728", Other: "#815b82" };
+	const accent = themeColors[field] || themeColors.All;
+	const light_theme = {
+  primary: accent,
+  cardTitleColor: accent,
+  titleColor: accent
 			};
 
 const dark_theme = {
-  primary: "#f0b429",        // lighter, warm golden
-  cardTitleColor: "#f0b429",
-  titleColor: "#f0b429"
+  primary: "#d4876e",
+  cardTitleColor: "#d4876e",
+  titleColor: "#d4876e"
 };
 
   useEffect(() => {

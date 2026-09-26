@@ -1,4 +1,15 @@
-[
+[	{
+		"img": "projectPics/BattCal.png",
+		"title": "Battery Resource Optimization Web App",
+		"text": "Developed a browser-based application to optimize battery resource management that aims to maximise the usage time given a set of constraints.",
+		"fields": ["All", "Engineering"]
+	},
+
+	{ 	"img": "projectPics/UnrealSimulationProject.png",
+		"title": "Unreal Engine Simulation for autonomous Drone",
+		"text": "Created a simulation environment in Unreal Engine to train pilots on autonomous drone software like px4 and Ardupilot, focusing on flight dynamics and obstacle avoidance.",
+		"fields": ["All", "Engineering", "Education"]
+	},
 
 	{
 		"img": "projectPics/Game_portfolio.png",
